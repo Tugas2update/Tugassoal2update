@@ -113,7 +113,7 @@ public class MainFrame extends javax.swing.JFrame {
         txtOutput.setRows(5);
         jScrollPane3.setViewportView(txtOutput);
 
-        jLabel11.setText("Developed by : PBO12-Kelompok10");
+        jLabel11.setText("Developed by : PBO12-Mayendra-Kelompok10");
 
         jLabel12.setText("Cabang");
 
@@ -253,6 +253,58 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_chkKecilActionPerformed
 
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
+        String noKtp;
+        String nama;
+        String jenKel;
+        String handuk = "";
+        String cabang;
+        String paket;
+        int biaya = 0;
+
+        nama = txtNama.getText();
+        noKtp = txtNoKtp.getText();
+
+        if (male.isSelected()) {
+            jenKel = male.getText();
+        } else {
+            jenKel = female.getText();
+        }
+
+        if (chkKecil.isSelected()) {
+            handuk += " Kecil";
+        }
+
+        if (chkBesar.isSelected()) {
+            handuk += " Besar";
+        }
+
+        cabang = comboCabang1.getSelectedItem().toString();
+        paket = listPaket.getSelectedValue();
+
+        switch (paket) {
+            case "Reguler":
+                biaya = 450000;
+                break;
+            case "Mahasiswa":
+                biaya = 300000;
+                break;
+            case "Private":
+                biaya = 750000;
+                break;
+            case "Premium":
+                biaya = 1000000;
+                break;
+            default:
+                break;
+        }
+
+        txtOutput.append("PENDAFTARAN ANGGOTA GYM"
+                + "\nNo KTP : " + noKtp
+                + "\nNama : " + nama
+                + "\nJenis Kelamin : " + jenKel
+                + "\nCabang : " + cabang + "\nJenis Handuk : " + handuk
+                + "\nPaket Fitness : " + paket
+                + "\nBIAYA PENDAFTARAN : Rp " + biaya + "/bln");
 
     }//GEN-LAST:event_btnSimpanActionPerformed
 

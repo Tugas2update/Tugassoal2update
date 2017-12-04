@@ -318,7 +318,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Developed by : PBO12-Kelompok10"/>
+            <Property name="text" type="java.lang.String" value="Developed by : PBO12-Mayendra-Kelompok10"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel12">
