@@ -113,7 +113,7 @@ public class MainFrame extends javax.swing.JFrame {
         txtOutput.setRows(5);
         jScrollPane3.setViewportView(txtOutput);
 
-        jLabel11.setText("Developed by : PBO12-10116516-FADLIFATURRAHMAN");
+        jLabel11.setText("Developed by : PBO12-Kelompok10");
 
         jLabel12.setText("Cabang");
 
